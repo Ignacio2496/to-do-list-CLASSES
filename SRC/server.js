@@ -4,7 +4,7 @@ import cardController from "./Card/Controller/index.js";
 import cors from "cors";
 
 const app = express();
-const PORT = 3001;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(
@@ -23,6 +23,6 @@ const corsOptions = {
   optionSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
-app.listen(PORT, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log("The server is running");
 });
