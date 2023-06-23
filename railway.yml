@@ -1,0 +1,5 @@
+name: to-do-list-CLASSES
+env: production
+scripts:
+  - name: start
+    cmd: npm start
