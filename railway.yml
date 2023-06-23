@@ -1,4 +1,0 @@
-name: to-do-list-CLASSES
-scripts:
-  - name: start
-    cmd: npm start --omit=dev
