@@ -14,13 +14,12 @@ app.use(
 );
 app.use(cardController);
 const allowedOrigins = [
-  "http://localhost:3000",
-  "https://to-do-list-classes-production.up.railway.app",
+  "http://localhost:3000/",
+  "https://to-do-list-classes-production.up.railway.app/",
 ];
 const corsOptions = {
   origin: allowedOrigins,
   credentials: true,
-  AccessControlAllowOrigin: true,
   optionSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
