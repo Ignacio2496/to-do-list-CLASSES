@@ -1,7 +1,7 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const cardController = require("./Card/Controller/index.js");
-const cors = require("cors");
+import express from "express";
+import bodyParser from "body-parser";
+import cardController from "./Card/Controller/index.js";
+import cors from "cors";
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -20,6 +20,7 @@ const allowedOrigins = [
 const corsOptions = {
   origin: allowedOrigins,
   credentials: true,
+  AccessControlAllowOrigin: true,
   optionSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
