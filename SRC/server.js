@@ -13,10 +13,7 @@ app.use(
   })
 );
 app.use(cardController);
-const allowedOrigins = [
-  "http://localhost:3001",
-  "https://to-do-list-classes-production.up.railway.app",
-];
+const allowedOrigins = ["https://to-do-list-classes-production.up.railway.app"];
 const corsOptions = {
   origin: allowedOrigins,
   credentials: true, //access-control-allow-credentials:true
